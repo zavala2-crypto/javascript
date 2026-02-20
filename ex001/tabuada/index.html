@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+     Tabuada de :  <input type="number" name="txtano" id="txtano">
+       <input type="button" value="Mostrar" onclick="Mostrar()">
+    
+        <div id = "res"></div>
+        <div>
+
+            <select name="tabuada" id="seltab" size="13">
+                <option>Digite um numero</option>
+            </select>
+            
+        </div>
+       <script> 
+        function Mostrar() {
+            var txtv =document.querySelector('input#txtano')
+            var tab = document.getElementById('seltab')
+            var res = document.querySelector('div#res')
+            var a = Number(txtv.value)
+            tab.innerHTML = ''
+
+            for (var i = 1;i <= 12;i++)   {
+                var item = document.createElement('option')
+                    item.text += a + ' × ' + i + ' = ' + (a * i);
+                    tab.append(item)    
+            }
+        }
+        </script>
+        
+    </section>
+    <footer>
+<p>&copy;CienciaEduca</p>
+    </footer>
+
+</body>
+</html>

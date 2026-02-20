@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="Pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Country</h1>
+   Nome do pais: <input type="text" name="txtve1" id="txtve1">
+                 <input type="button" value="Verificar" onclick="Mostrar()">
+                 <div id="res"></div>
+    <script>
+    // Codigo nao rodava porque pegava o elemento e nao o valor do elemento//
+
+        function Mostrar() {
+            var txtv = document.querySelector('input#txtve1')
+            var res = document.querySelector('div#res')
+            var valorinput = txtv.value
+            res.innerHTML += 'O seu pais de origem e ' +valorinput
+            if (valorinput == 'Mocambique') {
+                res.innerHTML += '<p>Eu sou de ' +valorinput+ '.</p>'  
+            } else { 
+              res.innerHTML += '<P>Sou um estrangeiro.</p>'
+            }
+        // Limpa o input para nova entrada
+           InputElement.value = ''
+           InputElement.focus = ('')
+        }  
+
+    </script>  
+</body>
+</html>

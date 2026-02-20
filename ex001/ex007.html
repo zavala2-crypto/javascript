@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+   <style>
+    body{
+        background-color: rgba(25, 27, 170, 0.438);
+        font: normal 18px Arial;
+        color: white;
+    }
+    h1{
+        color: rgb(51, 104, 51);
+        background-color: rgb(92, 66, 48);
+    }
+   </style> 
+</head>
+<body>
+   <h1>Iniciando estudos com DOM</h1>
+   <p>Aqui vai o resultado </p> 
+   <P>Aprendendo a usar o <strong> DOM </strong>em JavaScript</P>
+   <div class="msg">Clique em mim</div>
+    <script>
+        
+     /* Por Marca
+     var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        p1.style.color = 'blue'
+        document.write(p1.innerText)
+        corpo.style.background = 'black'
+        */
+       /* Por ID
+       var corpo = document.body
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        innerText = 'Estou mudando'
+        document.getElementById('msg').innerText = 'Estou mudando' */
+
+       /* var d = document.getElementsByName('msg')[0]
+        d.style.background = 'red'
+        innertText = 'Estou melhorando'
+        document.write(d.innerText) */
+        /*Por classe
+        var d = document.getElementsByClassName('msg')[0]
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando' */
+var d = document.querySelector('div.msg')
+d.style.background = 'red'
+d.innerText = 'Ola'
+   
+   </script>
+</body> 
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-P">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mostrar o meu nome na tela</h1>
+    <p>Nome: <input type="text"  id="nome">
+              <input type="button" value="Mostrar" onclick="Mostrar()" >
+             </p>
+    <div id="res"> Resposta</div>  
+    <script>
+        function Mostrar() {
+            var tn1 = document.querySelector('input#nome')
+            var n1 = tn1
+            var res = document.querySelector('div#res')
+            res.innerHTML = tn1
+        }
+    </script>
+</body>
+</html>
