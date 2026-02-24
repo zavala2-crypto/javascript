@@ -1,6 +1,6 @@
 var agora = new Date()
 var diaSem = agora.getDay
-diaSem = 7
+diaSem = 2
 switch (diaSem) {
     case 0:
         console.log('Saturday')
@@ -9,7 +9,7 @@ switch (diaSem) {
         console.log('Monday')
         break;
     case 2:
-        console.log('Thuesfay')
+        console.log('Tuesday')
         break;
     case 3:
         console.log('Wendsday')
@@ -21,7 +21,7 @@ switch (diaSem) {
         console.log('Friday')
         break;
     case 6:
-        console.log('')
+        console.log('Saturday')
         break;
     default:
         console.log('[Erro] Dia Invalide!')
